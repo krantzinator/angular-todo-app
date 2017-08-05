@@ -9,12 +9,6 @@ export class TodoDataService {
   constructor(
     private api: ApiService
   ) { }
-  //Placeholder for last id so we can simulate
-  //automatic incrementing of IDs
-  lastId: number = 0;
-
-  //Placeholder for todo's
-  todos: Todo[] = [];
 
   //simulate POST /todos
   addTodo(todo: Todo): Observable<Todo> {
